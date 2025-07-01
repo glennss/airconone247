@@ -21,11 +21,10 @@ nav {
     padding: 1rem 2rem;
 }
 
-.logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #007bff;
+.logo img {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
 }
 
 .nav-links {
@@ -64,8 +63,16 @@ nav {
 }
 
 .hero {
-    background-image: linear-gradient(to right, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1500x800');
+    background-image: linear-gradient(to right, rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.8)), url('../images/hero.avif');
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
     background-position: center;
     height: 100vh;
     display: flex;
@@ -76,7 +83,8 @@ nav {
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .hero h1 {
@@ -121,6 +129,11 @@ section h2 {
     margin-bottom: 2rem;
 }
 
+.content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .service-container {
     display: flex;
     justify-content: space-around;
@@ -144,6 +157,19 @@ section h2 {
 .service-box i {
     color: #007bff;
     margin-bottom: 1rem;
+}
+
+#contact .content-wrapper a.cta-button {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 footer {

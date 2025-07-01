@@ -1,0 +1,16 @@
+<svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 45px;
+      font-weight: bold;
+    }
+    .co_blue {
+      fill: #007bff;
+    }
+    .co_black {
+      fill: #333;
+    }
+  </style>
+  <text x="0" y="45" class="text co_blue">AirCon<tspan class="co_black">One</tspan> <tspan class="co_blue">247</tspan></text>
+</svg>
