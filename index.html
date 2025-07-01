@@ -2,168 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>AirConOne 24/7 | Air Conditioning Installation and Maintenance</title>
-    <style>
-        :root {
-            --primary: #1976d2;
-            --secondary: #ffffff;
-            --accent: #e3f2fd;
-            --text: #222;
-        }
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: var(--accent);
-            color: var(--text);
-        }
-        header {
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 1.5rem 0;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
-        nav {
-            margin-top: 1rem;
-        }
-        nav a {
-            color: var(--secondary);
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        nav a:hover {
-            color: #bbdefb;
-        }
-        .hero {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 3rem 1rem 2rem 1rem;
-            background: linear-gradient(135deg, #1976d2 60%, #e3f2fd 100%);
-            color: var(--secondary);
-        }
-        .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 2rem;
-        }
-        .cta-btn {
-            background: var(--secondary);
-            color: var(--primary);
-            border: none;
-            padding: 0.8rem 2rem;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
-            transition: background 0.2s, color 0.2s;
-        }
-        .cta-btn:hover {
-            background: #bbdefb;
-            color: #0d47a1;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            padding: 3rem 1rem;
-            background: var(--secondary);
-        }
-        .service-card {
-            background: var(--accent);
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
-            padding: 2rem;
-            max-width: 300px;
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px) scale(1.03);
-        }
-        .service-card h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        .contact {
-            background: var(--primary);
-            color: var(--secondary);
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        .contact h2 {
-            margin-bottom: 1rem;
-        }
-        .contact p {
-            margin: 0.5rem 0;
-        }
-        footer {
-            background: #1565c0;
-            color: var(--secondary);
-            text-align: center;
-            padding: 1rem 0;
-            font-size: 0.95rem;
-        }
-        @media (max-width: 800px) {
-            .services {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirConOne 247</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>AirConOne 24/7</h1>
         <nav>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <div class="logo">
+                <a href="#">AirConOne 247</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Expert Air Conditioning Installation, 24/7</h2>
-        <p>
-            Stay cool and comfortable all year round with AirConOne 24/7. We provide professional air conditioning installation and maintenance services for homes and businesses, any time you need us.
-        </p>
-        <a href="#contact"><button class="cta-btn">Get a Free Quote</button></a>
-    </section>
-    <section class="services" id="services">
-        <div class="service-card">
-            <h3>Residential Installation</h3>
-            <p>Custom air conditioning solutions for your home, installed by certified experts.</p>
-        </div>
-        <div class="service-card">
-            <h3>Commercial Installation</h3>
-            <p>Efficient, scalable AC systems for offices, shops, and commercial spaces.</p>
-        </div>
-        <div class="service-card">
-            <h3>24/7 Emergency Service</h3>
-            <p>Round-the-clock support and repairs to keep you cool, day or night.</p>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Trusted Air Conditioning Experts</h1>
+            <p>Providing reliable and affordable cooling solutions 24/7</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
         </div>
     </section>
-    <section class="contact" id="contact">
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fas fa-snowflake fa-3x"></i>
+                <h3>AC Installation</h3>
+                <p>We offer professional AC installation services for all major brands.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-concierge-bell fa-3x"></i>
+                <h3>AC Maintenance</h3>
+                <p>Keep your AC running efficiently with our regular maintenance plans.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-tools fa-3x"></i>
+                <h3>AC Repair</h3>
+                <p>Our certified technicians are available 24/7 for emergency AC repairs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>AirConOne 247 is a leading provider of air conditioning solutions. We are dedicated to providing our customers with the highest quality of service and products. Our team of certified technicians are available 24/7 to assist you with all of your air conditioning needs.</p>
+    </section>
+
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p><strong>Email:</strong> info@airconone247.com</p>
-        <p><strong>Phone:</strong> 0800 123 4567</p>
-        <p><strong>Service Area:</strong> Greater City Region</p>
+        <p>Have a question or need a quote? Send us an email!</p>
+        <a href="mailto:contact@airconone247.com" class="cta-button">Email Us</a>
     </section>
+
     <footer>
-        &copy; 2024 AirConOne 24/7. All rights reserved.
+        <p>&copy; 2025 AirConOne 247. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
